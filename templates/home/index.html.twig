@@ -1,20 +1,56 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  {% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  {% endblock %}
+</head>
+<body>
+  <div class="container">
+    <div class="presentation">
+        <div class="titre">
+          <h1>Bienvenue sur l'application web de gestion de votre budget</h1>
+          <div class="image">
+            <img src="{{asset('images/home.png')}}" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="formulaire">
+      <div class="form">
+        
+        <form class="login-form" action="">
+            <h2>Accedez à votre espace</h2>
+                <div class="form-items">
+                  <label for="email">Email</label>
+                  <input type="email">
+                </div-form-items>
+                <div class="form-items">
+                  <label for="password">Mot de passe</label>
+                  <input type="password">
+                </div>
+                <div class='forgotten-password'>
+                  <span >Mot de passe oublié ?</span>
+                </div>
+                <button class="submit-button"> Se connecter</button>
+              
+          
 
-{% block title %}Hello HomeController!{% endblock %}
+                
+                <div class="register">
+                  <h4> Pas encore de compte ? <a href="#">S'inscrire</a></h4>
+                </div>
+         
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'B:/projet/Extra/Symfony 4/BudgetApp/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'B:/projet/Extra/Symfony 4/BudgetApp/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}

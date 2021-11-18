@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"Lato", sans-serif;
+}
+/* container */
+.container {
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* presentation */
+.container .presentation {
+   
+    background-color:azure;
+    flex:3;
+    justify-content: center;
+    align-items: center;
+
+}
+.container > .presentation > .titre {
+    
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* formulaire */
+.container .formulaire {
+    
+    justify-content: center;
+    align-items: center;
+    flex:2;
+}
+
+
+.container > .formulaire > .form{
+    background-color:#ffaa40;
+    padding: 15px;
+    margin: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow:#ccae88 10px 5px 6px 4px ;
+}
+.form-items{
+   
+    margin:7px 0 7px;;
+}
+.form-items input
+{
+    width:100%;
+    display:inline-block;
+    padding:5px 5px;
+    border-radius: 4px;
+    border:none;
+    height: 20px;
+}
+
+.submit-button{
+    padding: 12px;
+    border:0;
+    background-color:#00b8c2;
+    margin-top:5px;
+    float: right;
+    display:block;
+    color:white;
+    transition: width 0.4s ease-in-out;
+}
+.submit-button:hover{
+    cursor:pointer;
+    width:120px;
+
+}
+
+
+.register{
+    display:block;
+    padding:5px;
+    text-align:center;
+    margin-top:25px;
+}
+
+.register a {
+    text-decoration:none;
+    color:#7933a3;
+    text-align:center;
+    transition: 1s;
+}
+
+.register a:hover{
+    color:#4d2070;
+    font-weight:bold;
+    
+}
+
+
+
